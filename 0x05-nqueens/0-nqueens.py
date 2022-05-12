@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-The N queens puzzle is the challenge of placing N non-attacking queens on an NxN chessboard.
+The N queens puzzle is the challenge of placing 
+N non-attacking queens on an NxN chessboard.
 Write a program that solves the N queens problem.
 """
 
@@ -35,8 +36,7 @@ def nqueens(list):
             if nonAttack == 1:
                 listThreat.append([col, row])
                 if NxN - 1 != col:
-                    nqueens([list[0], col + 1, listThreat])
-                    
+                    nqueens([list[0], col + 1, listThreat]) 
                 else:
                     print(listThreat)
                 del listThreat[-1]
